@@ -1,5 +1,5 @@
 import React, { Component } from 'react'; 
-import MugList from '../components/app/mugs/muglist';
+import MugList from '../components/app/mugs/mugList';
 import Controls from '../components/app/mugs/controls';
 import { findMugs, findMugsByKeyword } from '../services/etsy'; 
 
