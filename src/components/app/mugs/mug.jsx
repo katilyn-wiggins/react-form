@@ -1,19 +1,21 @@
 import React from 'react';
 import PropTypes from  'prop-types'; 
 
-const Mug = ({ name, image, text }) => (
-    <figure> 
-        <img src={image} alt={name} /> 
-        <figcaption>
-            {text} - article written by {name} 
-        </figcaption>
-    </figure>
+const Mug = ({ title, image, price, link }) => (
+    console.log(image, 'mug'),
+    <div> 
+        <div><img src={image} alt={title} /></div>
+        <em>{title}</em>
+        <div>{price}</div>
+        <a href={link}>Buy Here!</a>
+    </div>
 );
 
 Mug.propTypes = {
-    name: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired
 }
 
 export default Mug; 

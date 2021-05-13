@@ -1,0 +1,26 @@
+ul {
+  border: black 10px solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+li {
+  border: blue 5px solid;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+img {
+  height: 100px;
+}
