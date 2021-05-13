@@ -1,9 +1,9 @@
 import React from 'react'; 
 import PropTypes from 'prop-types'; 
 
-const Controls = ({ mugName, onMugNameChange, onSubmit}) => (
+const Controls = ({ mugName, onMugNameChange, onSubmit }) => (
     <form onSubmit={onSubmit}> 
-        <label htmlFor="mug-name">Mug Name</label>
+        <label htmlFor="mug-search">Search For Any Mug!</label>
         <input 
             id="mug-name"
             type="text"
