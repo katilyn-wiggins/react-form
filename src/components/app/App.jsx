@@ -1,6 +1,6 @@
 import React from 'react';
-import NewsHeadline from '../../containers/programContainer'; 
+import MugContainer from '../../containers/mugContainer';
 
 export default function App() {
-  return <NewsHeadline /> ;
+  return <MugContainer /> ;
 }
