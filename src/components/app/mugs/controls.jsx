@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Controls = ({ mugName, onMugNameChange, onSubmit }) => (
     <form onSubmit={onSubmit}> 
-        <label htmlFor="mug-search">Search For Any Mug!</label>
+        <label htmlFor="mug-name">Search For Any Mug!</label>
         <input 
             id="mug-name"
             type="text"
@@ -16,7 +16,7 @@ const Controls = ({ mugName, onMugNameChange, onSubmit }) => (
 
 Controls.propTypes = {
     mugName: PropTypes.string.isRequired,
-    onMugNameChange: PropTypes.func.isrequired, 
+    onMugNameChange: PropTypes.func.isRequired, 
     onSubmit: PropTypes.func.isRequired
 }; 
 

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from  'prop-types'; 
 
 const Mug = ({ title, image, price, link }) => (
-    console.log(image, 'mug'),
+    // console.log(image, 'mug'),
     <div> 
         <div><img src={image} alt={title} /></div>
         <em>{title}</em>

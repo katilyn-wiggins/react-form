@@ -1,5 +1,6 @@
 import React from 'react'; 
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event'
 import MugContainer from './mugContainer'; 
 import { findMugs, findMugsByKeyword } from '../services/etsy'
 
@@ -33,6 +34,12 @@ describe(' api container test', () => {
         render (<MugContainer />); 
 
         screen.getByText('Loading...'); 
+
+        const input = await screen.findByLabelText('Search For Any Mug!');
+        userEvent.type(input, 'unicorn')
+
+        const submitButton = await screen.findByRole('button', { name : 'find-mugs'});
+        userEvent.click(submitButton); 
 
         const ul = await screen.findByRole('list', { name: 'mugs' })
         expect(ul).not.toBeEmptyDOMElement(); 
